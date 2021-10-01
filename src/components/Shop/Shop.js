@@ -39,6 +39,7 @@ const Shop = () => {
         // save to local storage (for now) 
         addToDb(product.key);
     }
+    // handleing search here 
     const handleSearch = event =>{
         const searchText = event.target.value;
         const matchProducts = products.filter(product => product.name.toLowerCase().includes(searchText.toLowerCase()));
