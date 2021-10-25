@@ -12,7 +12,7 @@ const Header = () => {
                 <NavLink to="/shop">Shop</NavLink>
                 <NavLink to="/review">Order Review</NavLink>
                 <NavLink to="/inventory">Manage Inventory</NavLink>
-                {user.email && <small style = {{color: 'white'}}>Hello {user.displayName}</small>}
+                {user.email && <img className = 'user-photo' src = {user.photoURL} alt = ''/>}
                 {
                     user.email ?
                     <button onClick = {logOut}>Log out</button>

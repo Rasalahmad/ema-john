@@ -22,3 +22,10 @@
 .header nav a:hover {
     background-color: lightgray;
 }
+.user-photo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
