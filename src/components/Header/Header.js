@@ -12,6 +12,7 @@ const Header = () => {
                 <NavLink to="/shop">Shop</NavLink>
                 <NavLink to="/review">Order Review</NavLink>
                 <NavLink to="/inventory">Manage Inventory</NavLink>
+                {user.email && <NavLink to="/orders">Orders</NavLink>}
                 {user.email && <img className = 'user-photo' src = {user.photoURL} alt = ''/>}
                 {
                     user.email ?
